@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'Poppins', sans-serif;
+}
+
+textarea:focus, button:focus, input:focus, select:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.todo-app {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 60px 0;
+  min-height: 80vh;
+}
+
+.todo-app .container {
+  width: 55%;
+  margin: auto;
+  padding: 50px 0;
+  -webkit-box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.todo-app .container h1 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+  color: gray;
+}
+
+.todo-app .container .form-container {
+  padding: 20px 0;
+}
+
+.todo-app .container .form-container .form-group {
+  border-top: 1px solid #e6e6e6;
+}
+
+.todo-app .container .form-container .form-group textarea {
+  width: 100%;
+  color: gray;
+  border: none;
+  padding: 0 10px;
+  font-size: 17px;
+}
+
+.todo-app .container .form-container .form-group label {
+  color: gray;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px;
+}
+
+.todo-app .container .form-container .form-group select, .todo-app .container .form-container .form-group input {
+  width: 100%;
+  padding: 0 10px;
+  border: none;
+  padding-right: 30px;
+}
+
+.todo-app .container .form-container .col-sm-6 {
+  border-bottom: 1px solid #e6e6e6;
+  padding-bottom: 30px;
+}
+
+.todo-app .container .form-container .btn-container {
+  margin: 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.todo-app .container .form-container .btn-container button {
+  margin: 0 5px;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 25px;
+}
+
+.todo-app .container .form-container .btn-container button img {
+  max-width: 30px;
+  margin-right: 5px;
+}
+
+.todo-app .container .form-container .btn-container .add-btn {
+  background: #2b2b2b;
+}
+
+.todo-app .container .form-container .btn-container .delete-btn {
+  background: #ec2727;
+}
+
+.task-list {
+  padding: 10px;
+}
+
+.task-list .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.task-list .list .checkbox-container {
+  width: 5%;
+  padding-top: 5px;
+}
+
+.task-list .list .checkbox-container input {
+  width: 15px;
+  height: 15px;
+}
+
+.task-list .list .list-data {
+  width: 65%;
+}
+
+.task-list .list .list-data p {
+  margin-bottom: 5px;
+  color: gray;
+}
+
+.task-list .list .list-data .list-desc {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.task-list .list .list-category {
+  width: 30%;
+  text-align: right;
+  padding-right: 50px;
+}
+
+.task-list .list .list-category .category-box {
+  padding: 12px 20px;
+  color: white;
+  border-radius: 3px;
+  background-color: #be00be;
+  display: inline-block;
+}
+
+.task-list .list img {
+  max-width: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 90% !important;
+  }
+  .btn-container button {
+    padding: 5px !important;
+    font-size: 12px !important;
+    padding-right: 10px !important;
+  }
+  .checkbox-container {
+    margin-right: 10px;
+    padding-top: 2px !important;
+  }
+  .checkbox-container
+.list-category p {
+    padding: 7px !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */

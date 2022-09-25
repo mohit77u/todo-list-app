@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: 'Poppins', sans-serif;
+}
+
+textarea,button,input,select{
+    &:focus{
+        outline: none;
+        box-shadow: none;
+    }
+}
+
+.todo-app{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 0;
+    min-height: 80vh;
+    .container{
+        width: 55%;
+        margin: auto;
+        padding: 50px 0;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        h1{
+            text-align: center;
+            font-size: 40px;
+            font-weight: 600;
+            color: gray;
+        }
+        .form-container{
+            padding: 20px 0;
+            .form-group{
+                border-top: 1px solid rgb(230, 230, 230);
+                textarea{
+                    width: 100%;
+                    color: gray;
+                    border: none;
+                    padding: 0 10px;
+                    font-size: 17px;
+                }
+                label{
+                    color: gray;
+                    text-transform: uppercase;
+                    font-size: 14px;
+                    font-weight: 500;
+                    padding: 10px;
+                }
+                select, input{
+                    width: 100%;
+                    padding: 0 10px;
+                    border: none;
+                    padding-right: 30px;
+                }
+            }
+            .col-sm-6{
+                border-bottom: 1px solid rgb(230, 230, 230);
+                padding-bottom: 30px;
+            }
+            .btn-container{
+                margin: 30px 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                button{
+                    margin: 0 5px;
+                    padding: 10px 20px;
+                    color: white;
+                    border: none;
+                    text-transform: uppercase;
+                    font-size: 15px;
+                    font-weight: 600;
+                    display: flex;
+                    align-items: center;
+                    padding-right: 25px;
+                    img{
+                        max-width: 30px;
+                        margin-right: 5px;
+                    }
+                }
+                .add-btn{
+                    background: rgb(43, 43, 43);
+                }
+                .delete-btn{
+                    background: rgb(236, 39, 39);
+                }
+            }
+        }
+    }
+}
+.task-list{
+    padding: 10px;
+    .list{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        border-bottom: 1px solid rgb(230, 230, 230);
+        .checkbox-container{
+            width: 5%;
+            padding-top: 5px;
+            input{
+                width: 15px;
+                height: 15px;
+            }
+        }
+        .list-data{
+            width: 65%;
+            p{
+                margin-bottom: 5px;
+                color: gray;
+            }
+            .list-desc{
+                text-transform: uppercase;
+                font-weight: 600;
+            }
+        }
+        .list-category{
+            width: 30%;
+            text-align: right;
+            padding-right: 50px;
+            .category-box{
+                padding: 12px 20px;
+                color: white;
+                border-radius: 3px;
+                background-color: rgb(190, 0, 190);
+                display: inline-block;
+            }
+        }
+        img{
+            max-width: 20px;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container{
+        width: 90% !important;
+    }
+    .btn-container{
+        button{
+            padding: 5px !important;
+            font-size: 12px !important;
+            padding-right: 10px !important;
+        }
+    }
+    .checkbox-container{
+        margin-right: 10px;
+        padding-top: 2px !important;
+    }
+    .checkbox-container
+    .list-category{
+        p{
+            padding: 7px !important;
+        }
+    }
+}
